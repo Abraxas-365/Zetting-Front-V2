@@ -5,11 +5,11 @@ import Casting from '../../../assets/svg/casting.svg'
 import Zetting from '../../../assets/svg/zetting.svg'
 import Bell from '../../../assets/svg/bell.svg'
 import Profile from '../../../assets/svg/profile.svg'
-import ScreenProfileHome from '../../screens/profile/home/ScreenProfileHome';
+import ScreenFeedHome from '../../screens/feed/home/ScreenFeedHome';
 import ScreenExploreHome from '../../screens/explore/home/ScreenExploreHome';
-import ScreenCastingHome from '../../screens/casting/home/ScreenCastingHome';
-import ScreenProjectHome from '../../screens/project/home/ScreenProjectHome';
 import ScreenNotificationHome from '../../screens/notification/home/ScreenNotificationHome';
+import ScreenProfileHome from '../../screens/profile/home/ScreenProfileHome';
+import ScreenProjectHome from '../../screens/project/home/ScreenProjectHome';
 
 const Tab = createBottomTabNavigator();
 const BottomTabs = () => {
@@ -18,16 +18,17 @@ const BottomTabs = () => {
             screenOptions={{
                 tabBarActiveTintColor: COLORS.orange,
                 headerShown: false,
-                tabBarStyle: { backgroundColor: COLORS.black, borderTopColor: COLORS.white }
+                tabBarShowLabel: false,
+                tabBarStyle: { borderTopWidth: 0, backgroundColor: COLORS.blue, borderTopColor: COLORS.white, borderWidth: 0 },
             }}
-            initialRouteName='Project' >
+            initialRouteName='Feed' >
 
-            <Tab.Screen name="Explore" component={ScreenExploreHome} options={{
+            <Tab.Screen name="Feed" component={ScreenFeedHome} options={{
                 tabBarIcon: ({ focused }) => (
                     <Search fill={focused ? COLORS.orange : COLORS.white} />
                 ),
             }} />
-            <Tab.Screen name="Casting" component={ScreenCastingHome} options={{
+            <Tab.Screen name="Explore" component={ScreenExploreHome} options={{
                 tabBarIcon: ({ focused }) => (
                     <Casting fill={focused ? COLORS.orange : COLORS.white} />
                 ),

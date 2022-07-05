@@ -1,9 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import ScreenWellcome from '../../screens/singUp/wellcomScreen/ScreenWellcome';
-import ScreenLogin from '../../screens/singUp/login/ScreenLogin';
-import ScreenRegister from '../../screens/singUp/register/ScreenRegister';
-import ScreenCheckEmail from '../../screens/singUp/register/ScreenCheckEmail';
+import ScreenGetStarted from '../../screens/autentication/getStarted/ScreenGetStarted';
 
 const Stack = createStackNavigator();
 
@@ -24,10 +21,7 @@ const SignUpStack = () => {
                 }
             }}
         >
-            <Stack.Screen name='WellcomScreen' options={{ title: "WellcomScreen" }} component={ScreenWellcome} />
-            <Stack.Screen name='LoginScreen' options={{ title: "LoginScreen" }} component={ScreenLogin} />
-            <Stack.Screen name='RegisterScreen' options={{ title: "RegisterScreen" }} component={ScreenRegister} />
-            <Stack.Screen name='CheckEmailScreen' options={{ title: "CheckEmailScreen" }} component={ScreenCheckEmail} />
+            <Stack.Screen name='WellcomScreen' options={{ title: "WellcomScreen" }} component={ScreenGetStarted} />
         </Stack.Navigator>
     );
 };

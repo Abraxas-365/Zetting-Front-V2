@@ -33,12 +33,12 @@ const MainNavigator = () => {
 
                 {status != 'autenticated' ?
                     <>
-                        <Stack.Screen name='SignUp' options={{ title: "SignUp" }} component={SignUpStack} />
+                        <Stack.Screen name='HomeScreen' options={{ title: "HomeScreen" }} component={BottomTabs} />
                     </>
 
                     :
                     <>
-                        <Stack.Screen name='HomeScreen' options={{ title: "HomeScreen" }} component={BottomTabs} />
+                        <Stack.Screen name='SignUp' options={{ title: "SignUp" }} component={SignUpStack} />
                         <Stack.Screen name='NewProjectStack' options={{ title: "NewProjectStack" }} component={ProjectStack} />
                     </>
 

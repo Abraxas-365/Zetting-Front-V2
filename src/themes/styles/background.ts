@@ -3,7 +3,7 @@ import { COLORS } from "../colors/ZettingColors";
 
 export const styleBackground = StyleSheet.create({
     darkBackground: {
-        backgroundColor: COLORS.black,
+        backgroundColor: COLORS.blue,
         flex: 1
     },
     lightBackground: {
