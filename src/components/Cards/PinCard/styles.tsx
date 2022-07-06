@@ -4,7 +4,8 @@ import { COLORS } from "../../../themes/colors/ZettingColors";
 export const styles = StyleSheet.create({
 
     pinContainer: {
-        width: '100%'
+        width: '100%',
+        padding: 8
     },
     image: {
         width: '100%',

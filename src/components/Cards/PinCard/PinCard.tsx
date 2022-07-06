@@ -6,7 +6,7 @@ import { styles } from './styles';
 type Props = {
     pin: {
         title: string,
-        tag: string,
+        tag?: string,
         image: string,
     }
 
