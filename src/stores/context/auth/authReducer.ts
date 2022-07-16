@@ -14,7 +14,6 @@ export const authInitialState: AuthState = {
 }
 
 export type AuthAction =
-    | { type: 'signUp', payload: { token: string, userId: string } }
     | { type: 'signIn', payload: { token: string, userId: string } }
     | { type: 'addError', payload: string }
     | { type: 'removeError' }
@@ -35,7 +34,6 @@ export const authReducer = (state: AuthState, action: AuthAction): AuthState => 
 
             }
         case 'signIn':
-        case 'signUp':
             return {
                 ...state,
                 errorMessage: null,

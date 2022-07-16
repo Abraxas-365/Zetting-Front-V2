@@ -16,7 +16,7 @@ const filteredItems = [
     {
         id: "1",
         image:
-            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/1.jpeg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/35f6a595226917.5e929d3672fd7.jpg",
         title: "test",
         tag: "tag"
     },
@@ -37,6 +37,64 @@ const filteredItems = [
     },
     {
         id: "4",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "5",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/3.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "6",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+
+    {
+        id: "7",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/1.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "8",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/2.jpeg",
+        title:
+            "test",
+        tag: "tag"
+    },
+    {
+        id: "9",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/3.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "10",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "11",
+        image:
+            "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/3.jpeg",
+        title: "test",
+        tag: "tag"
+    },
+    {
+        id: "12",
         image:
             "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
         title: "test",

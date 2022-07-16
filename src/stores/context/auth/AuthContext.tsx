@@ -2,7 +2,6 @@ import { CommonActions, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { createContext, useReducer } from "react";
 import { apiUser } from "../../../api/apiCalls";
-import { User } from "../../../functionalities/user/model"
 import { MainStackParamList } from "../../../navigation/main/mainNavigator";
 import { authInitialState, authReducer } from "./authReducer";
 
@@ -13,7 +12,6 @@ type AuthContextProps = {
     status: 'checking' | 'autenticated' | 'not-autenticated'
     signIn: (email: string, password: string) => void;
     signOut: () => void;
-    signUp: (user: User) => void;
     removeError: () => void;
 }
 
@@ -51,19 +49,12 @@ export const AuthProvider = ({ children }: any) => {
 
     };
     const signOut = () => { console.log('d') };
-    const registerIn = async (email: string) => {
-
-    };
-    const signUp = async (user: User) => {
-
-    };
     const removeError = () => { dispatch({ type: 'removeError' }) };
     return (
         <AuthContext.Provider value={{
             ...state,
             signIn,
             signOut,
-            signUp,
             removeError,
         }}>
 
