@@ -17,9 +17,11 @@ const CustomText = ({
 
 }: Props) => {
     return (
-        <Text style={[{ fontSize: size }, style, styles.text]}>
-            {text}
-        </Text >
+        <>
+            <Text numberOfLines={1} style={[{ fontSize: size }, style, styles.text]}>
+                {text}
+            </Text >
+        </>
     );
 };
 

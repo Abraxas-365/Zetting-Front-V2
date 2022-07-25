@@ -10,6 +10,7 @@ import AnimatedScrollView from '../../../functionalities/perfil/components/Anima
 import ProfileInfo from '../../../functionalities/perfil/components/ProfileInfo';
 import CustomButton from '../../../components/Buttons/CustomButton';
 import Mail from '../../../../assets/svg/mail.svg'
+import ArtistInfoContainer from '../../../functionalities/perfil/components/ArtistInfoContainer/ArtistInfoContainer';
 const ScreenProfileHome = () => {
     const HEADER_HEIGHT_NARROW = 90
     const HEADER_HEIGHT_EXPAND = 69
@@ -23,7 +24,7 @@ const ScreenProfileHome = () => {
 
             <AnimatedScrollView scrollY={scrollY} HEADER_HEIGHT_EXPAND={HEADER_HEIGHT_EXPAND} HEADER_HEIGHT_NARROW={HEADER_HEIGHT_NARROW}>
                 {/*profile/photos*/}
-                <View style={[{ backgroundColor: COLORS.blue, marginBottom: 80 }, styleWrappers.frameWrapper]}>
+                <View style={[{ backgroundColor: COLORS.blue, marginBottom: 80 }]}>
                     {/*Header name/avatar*/}
                     <View style={{ marginTop: -60 }}>
                         <ProfilePic
@@ -42,9 +43,12 @@ const ScreenProfileHome = () => {
                         <CustomButton styleContainer={{ width: 43, height: 43, backgroundColor: '#0E3550', borderColor: '#0E3550' }} childrenStyle={{ alignSelf: 'center', alignItems: 'center', marginTop: 12 }}>
                             <Mail />
                         </CustomButton>
-
                     </View>
-
+                    {/*Work/info Views*/}
+                    {/*TODO ternaryoperator to show ArtistInfoContainer and Buissnesscontainer */}
+                    <View style={{ marginHorizontal: '3%' }}>
+                        <ArtistInfoContainer />
+                    </View>
                 </View>
             </AnimatedScrollView>
         </View >

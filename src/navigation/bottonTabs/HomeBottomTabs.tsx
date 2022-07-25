@@ -1,10 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { COLORS } from '../../themes/colors/ZettingColors';
 import Search from '../../../assets/svg/search.svg'
-import Casting from '../../../assets/svg/casting.svg'
 import Zetting from '../../../assets/svg/zetting.svg'
 import Bell from '../../../assets/svg/bell.svg'
 import Profile from '../../../assets/svg/profile.svg'
+import Home from '../../../assets/svg/home.svg'
 import ScreenFeedHome from '../../screens/feed/home/ScreenFeedHome';
 import ScreenExploreHome from '../../screens/explore/home/ScreenExploreHome';
 import ScreenNotificationHome from '../../screens/notification/home/ScreenNotificationHome';
@@ -25,12 +25,12 @@ const BottomTabs = () => {
 
             <Tab.Screen name="Feed" component={ScreenFeedHome} options={{
                 tabBarIcon: ({ focused }) => (
-                    <Search fill={focused ? COLORS.orange : COLORS.white} />
+                    <Home fill={focused ? COLORS.orange : COLORS.white} />
                 ),
             }} />
             <Tab.Screen name="Explore" component={ScreenExploreHome} options={{
                 tabBarIcon: ({ focused }) => (
-                    <Casting fill={focused ? COLORS.orange : COLORS.white} />
+                    <Search fill={focused ? COLORS.orange : COLORS.white} />
                 ),
             }} />
             <Tab.Screen name="Project" component={ScreenProjectHome} options={{

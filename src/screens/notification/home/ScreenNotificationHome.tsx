@@ -1,11 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
 const ScreenNotificationHome = () => {
     return (
-        <View>
-
-        </View>
+        <SafeAreaView style={{ margin: 30 }}>
+        </SafeAreaView>
     );
 };
 

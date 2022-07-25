@@ -8,8 +8,6 @@ export const style = StyleSheet.create({
     button: {
         borderRadius: 23,
         backgroundColor: COLORS.black,
-        borderColor: COLORS.white,
-        borderWidth: 2,
     },
     text: {
         alignSelf: 'center',

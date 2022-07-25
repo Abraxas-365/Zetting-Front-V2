@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
 import PinCard from '../../../../components/Cards/PinCard';
@@ -58,32 +59,29 @@ type Props = {
     style?: StyleProp<ViewStyle>
     tipo?: string
 }
-const FeedContainer = ({
-    header = <View />,
+const ExploreContainer = ({
     style,
     tipo
 }: Props) => {
     const [data, setData] = useState(filteredItems)
     useEffect(() => {
-        if (tipo == 'general') {
+        if (tipo == 'trend') {
             setData(filteredItems)
-        } else if (tipo == 'connected') {
+        } else if (tipo == 'design') {
             setData(filteredItems2)
         }
     })
     return (
         <View style={[styleWrappers.frameWrapper, { flex: 1 }, style]}>
             <MasonrryList
-                children={
-                    header
-                }
                 style={{ backgroundColor: COLORS.blue, alignSelf: 'stretch' }}
                 data={data}
                 keyExtractor={(item): string => item.id}
                 contentContainerStyle={{
                     backgroundColor: COLORS.blue,
+                    marginTop: 20
                 }}
-                numColumns={2}
+                numColumns={3}
                 showsVerticalScrollIndicator={false}
                 renderItem={({ item }) => <PinCard pin={item} />}
             />
@@ -92,4 +90,4 @@ const FeedContainer = ({
     );
 };
 
-export default FeedContainer;
+export default ExploreContainer;
